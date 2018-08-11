@@ -1,12 +1,17 @@
 {
   "name": "app-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://www.gihub.com/ryakosh/portfolio_alirezanejad",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js"
+  },
   "author": "ryakosh",
   "license": "MIT",
   "devDependencies": {
-    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
@@ -17,6 +22,7 @@
     "style-loader": "^0.22.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
