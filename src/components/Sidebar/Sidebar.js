@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles/main.scss';
+
 export default class Sidebar extends React.Component {
   render() {
     return (
