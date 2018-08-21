@@ -3,8 +3,9 @@
   height: 42.05%;
   background-color: white;
   box-shadow: 1px 1px 10px black;
-  border-radius: 0 14 14 0;
+  border-radius: 0 14px 14px 0;
   position: fixed;
   left: 0;
-  top: 193.3px;
+  top: 50%;
+  transform: translateY(-50%);
 }
