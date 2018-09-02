@@ -25,7 +25,7 @@ export default class Quoter extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.changeQuote, this.WAIT_TIME);
+    this.changeQuote();
   }
 
   changeQuote() {
@@ -34,11 +34,21 @@ export default class Quoter extends React.Component {
       this.wait(resolve);
     }).then(() => {
       this.showQuoter();
+      this.wait(() => {
+        this.changeQuote();
+      });
     });
   }
 
+  genRandQuote(quotes) {
+    return quotes[Math.floor(Math.random() * quotes.length)];
+  }
+
   showQuoter() {
-    this.setState({ show: true });
+    this.setState((prevState, props) => ({
+      show: true,
+      quote: this.genRandQuote(props.quotes),
+    }));
   }
 
   hideQuoter() {
