@@ -1,0 +1,16 @@
+.quoter {
+  width: 255px;
+  height: 43px;
+  border-radius: 14px 0 0 14px;
+  background-color: white;
+  box-shadow: -1px 1px 10px black;
+  position: fixed;
+  right: -800px;
+  bottom: 27px;
+  transform: translateX(0);
+  transition: transform .4s;
+}
+
+.quoter_show {
+  transform: translateX(-800px);
+}
