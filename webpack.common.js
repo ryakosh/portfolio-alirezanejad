@@ -16,6 +16,7 @@ module.exports = {
             presets: ['react', 'env'],
           },
         },
+        exclude: /node_modules/,
       },
     ],
   },
