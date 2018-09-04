@@ -1,0 +1,13 @@
+.round-list__item {
+  width: 81.5px;
+  height: 100%;
+  border-right: 1px solid #616161;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.round-list__item:last-child {
+  border-right: none;
+}
